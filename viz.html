@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Visualizations{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mt-4 mb-3">Data Visualizations</h1>
+        <p class="text-muted">Note: Values of 0 in the charts represent 'N/A' in the dataset.</p>
+        <div class="chart-container">
+            {{ bar_html | safe }}
+        </div>
+        <div class="chart-container">
+            {{ hist_html | safe }}
+        </div>
+        <h2 class="mt-4">Locations by Headquarters per Continent</h2>
+        {% for continent, pie_data in pie_htmls.items() %}
+        <div class="chart-container">
+            <h3>{{ continent }} <small class="text-muted">(Total Locations: {{ pie_data.total_locations }})</small></h3>
+            {{ pie_data.html | safe }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
