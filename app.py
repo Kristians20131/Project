@@ -224,7 +224,7 @@ def visualizations():
 
     # Bar chart: Total num_locations by headquarters
     bar_fig = px.bar(df.groupby('headquarters')['num_locations'].sum().reset_index(),
-                     x='headquarters', y='num_locations', title="Total `num_locations` by Headquarters")
+                     x='headquarters', y='num_locations', title="Total number of locations of each Headquarters")
     bar_fig.update_layout(
         plot_bgcolor='white',
         paper_bgcolor='white',
@@ -234,7 +234,7 @@ def visualizations():
     bar_html = bar_fig.to_html(full_html=False)
 
     # Histogram: Distribution of num_employees
-    hist_fig = px.histogram(df, x='num_employees', title="Distribution of `num_employees`",
+    hist_fig = px.histogram(df, x='num_employees', title="Distribution of employees",
                             nbins=20, range_x=[0, df['num_employees'].max()])
     hist_fig.update_layout(
         plot_bgcolor='white',
