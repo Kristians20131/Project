@@ -1,5 +1,5 @@
 # Programmēšanas projekts, kurā ir izstrādāta Web lapa.
-Projektā piedalījās skolēni no Rīgas Dārzciema Vidusskolas 12.a klases -- Kristians Bērziņš, Artūrs Ivolga, Ruslans Terehovs
+Projektā piedalījās skolēni no Rīgas Dārzciema Vidusskolas 12.a klases -- Kristians Bērziņš(grupas vadītājs), Artūrs Ivolga, Ruslans Terehovs
 
 Pirmajā lapā(Data) ir parādīta tabula ar lielveikalu ķēdēm, lielveikala(uzņēmuma) galvenās ēkas novietojumu(valsti), apkalpotās valstis, cik daudz šo veikalu ir izvietoti pa visu pasauli(pa tās apkalpojošām valstīm), darbinieku skaitu dotajā lielveikalu ķēdē.
 
